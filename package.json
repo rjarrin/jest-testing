@@ -5,16 +5,16 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "eslint './src/*.js' --fix",
     "check": "prettier './src/*.js' --check",
-    "write": "prettier './src/*.js' --write",
-    "start": "node ./src/index.js"
+    "write": "prettier './src/*.js' './src/tests/*.js' --write",
+    "test": "jest"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "@babel/cli": "^7.24.5",
     "@babel/core": "^7.24.5",
     "@babel/preset-env": "^7.24.5",
     "@eslint/eslintrc": "^3.0.2",
